@@ -2,7 +2,7 @@ import homePageLinks from '../pageObjects/homePageLinks'
 import pricingPageLinks from '../pageObjects/pricingPageLinks'
 describe('User visit diffrent pages on cypress.io', () => {
     const l = new homePageLinks()
-    Cypress.Cookies.preserveOnce('session_id', 'remember_token')
+    //Cypress.Cookies.preserveOnce('session_id', 'remember_token')
 
     it('UI Test 1.1 - User visit "Home Page" and visit the "How it works"', () => {
         l.homepage()
