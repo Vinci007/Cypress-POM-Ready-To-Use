@@ -2,7 +2,7 @@ import Login from '../pageObjects/reactLogin'
 
 describe('Login', function () {
     const login = new Login()
-    Cypress.Cookies.preserveOnce('session_id', 'remember_token')
+    cy.session()('session_id', 'remember_token')
 
     it('Sign in', function () {
         cy.visit('https://react-redux.realworld.io/#/login')
